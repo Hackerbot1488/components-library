@@ -1,0 +1,33 @@
+.title {
+	padding: 10px 0;
+}
+
+.dependencies,
+.socialList {
+	list-style-type: none;
+	padding: 0;
+}
+
+.socialList {
+	display: flex;
+	align-items: center;
+}
+
+.dependencies__item,
+.socialList__item {
+	margin: 0 10px;
+}
+
+.socialList__link {
+	display: block;
+}
+
+.dependencies__link {
+	display: inline-block;
+	color: #23c9ff;
+	margin-bottom: 5px;
+}
+
+.dependencies__link:hover {
+	text-decoration: underline;
+}
