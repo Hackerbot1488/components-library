@@ -8,21 +8,38 @@ interface buttonProps {
 	className?: string;
 	disabled?: boolean;
 	active?: boolean;
+	attrs?: any;
 }
 
-export const Button: React.FC<buttonProps> = ({
+export const Button: React.FC<buttonProps | any> = ({
 	children,
 	onCLick,
 	className,
 	disabled,
 	active,
+	...attrs
 }) => {
 	const classes: string = classNames("button", className, { active });
+	const Tag = attrs.href ? "a" : "button";
+	const onClickAction = (
+		e: React.MouseEvent<HTMLButtonElement | HTMLLinkElement>
+	) => {
+		if (disabled) {
+			e.preventDefault();
+		} else {
+			return onCLick(e);
+		}
+	};
 	return (
 		<div>
-			<button className={classes} disabled={disabled} onClick={onCLick}>
+			<Tag
+				className={classes}
+				disabled={disabled}
+				onClick={onClickAction}
+				{...attrs}
+			>
 				{children}
-			</button>
+			</Tag>
 		</div>
 	);
 };

@@ -34,7 +34,7 @@ const Sandbox = () => (
 			<span>4. Supporting data, type and etc. attributes:</span>
 		</h2>
 		<Button data-name="button" />
-		{/* <Button type="submit" />
+		<Button type="submit" />
 
 		<h2>
 			<span>5. Button link</span>
@@ -42,7 +42,7 @@ const Sandbox = () => (
 		<Button href="test">Link</Button>
 		<Button href="test" disabled>
 			Link
-		</Button> */}
+		</Button>
 	</Fragment>
 );
 
