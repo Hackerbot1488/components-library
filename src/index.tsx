@@ -3,10 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { App } from "./App";
 import * as serviceWorker from "./serviceWorker";
-
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Home } from "./layout/Home/Home";
+import ButtonSandbox from "./components/Button/sandbox";
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<BrowserRouter>
+			<App>
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route path="/button" component={ButtonSandbox} />
+				</Switch>
+			</App>
+		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById("root")
 );

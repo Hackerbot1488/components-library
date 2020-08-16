@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./navigation.css";
+import "./Navigation.css";
 
 export const Navigation: React.FC<{}> = () => (
 	<div className="navigation">
@@ -17,6 +17,11 @@ export const Navigation: React.FC<{}> = () => (
 				<li className="list__item">
 					<NavLink className="list__link" exact to="/">
 						Home
+					</NavLink>
+				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/button">
+						Button
 					</NavLink>
 				</li>
 			</ul>

@@ -1,6 +1,6 @@
 import React from "react";
 import { SOCIAL_CONFIG, DEPENDENCIES } from "./constants";
-import "./home.css";
+import "./Home.css";
 
 export const Home: React.FC<{}> = () => (
 	<>
