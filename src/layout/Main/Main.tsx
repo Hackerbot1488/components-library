@@ -1,8 +1,8 @@
 import React from "react";
 import "./main.css";
 interface mainProps {
-	children?: ChildNode;
+	children?: React.ReactNode;
 }
-export const Main: React.Fc<mainProps> = ({ children }: mainProps) => (
+export const Main: React.FC<mainProps> = ({ children }) => (
 	<div className="main">{children}</div>
 );
