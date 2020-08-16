@@ -1,7 +1,12 @@
 import React from "react";
+import { Main } from "./layout/Main/Main";
+import { Navigation } from "./layout/Navigation/Navigation";
 
-function App() {
-	return <div className="App"></div>;
-}
-
-export default App;
+export const App: React.FC = ({ children }) => {
+	return (
+		<div className="App">
+			<Navigation key="navigation" />
+			<Main key="main">{children}</Main>
+		</div>
+	);
+};

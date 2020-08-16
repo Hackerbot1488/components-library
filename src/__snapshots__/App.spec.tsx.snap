@@ -3,5 +3,12 @@
 exports[`App component should render App component 1`] = `
 <div
   className="App"
-/>
+>
+  <Component
+    key="navigation"
+  />
+  <Component
+    key="main"
+  />
+</div>
 `;
