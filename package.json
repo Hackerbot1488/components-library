@@ -39,7 +39,8 @@
     "coveragePathIgnorePatterns": [
       "./src/*/*.types.{ts,tsx}",
       "./src/index.tsx",
-      "./src/serviceWorker.ts"
+      "./src/serviceWorker.ts",
+      "./src/**/**/sandbox.tsx"
     ],
     "coverageReporters": [
       "json",
