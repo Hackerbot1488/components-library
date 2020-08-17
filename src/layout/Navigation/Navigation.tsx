@@ -39,6 +39,11 @@ export const Navigation: React.FC<{}> = () => (
 						Image
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/chip">
+						Chip
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>
