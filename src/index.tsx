@@ -6,6 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./layout/Home/Home";
 import ButtonSandbox from "./components/Button/sandbox";
+import { ButtonGroupSandBox } from "./components/ButtonGroup/sandbox";
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
@@ -13,6 +14,7 @@ ReactDOM.render(
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route path="/button" component={ButtonSandbox} />
+					<Route path="/button-group" component={ButtonGroupSandBox} />
 				</Switch>
 			</App>
 		</BrowserRouter>

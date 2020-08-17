@@ -24,6 +24,11 @@ export const Navigation: React.FC<{}> = () => (
 						Button
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/button-group">
+						ButtonGroup
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>
