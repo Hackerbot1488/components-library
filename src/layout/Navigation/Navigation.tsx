@@ -34,6 +34,11 @@ export const Navigation: React.FC<{}> = () => (
 						Icon
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/image">
+						Image
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>

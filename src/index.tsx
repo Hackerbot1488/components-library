@@ -8,6 +8,8 @@ import { Home } from "./layout/Home/Home";
 import { ButtonSandbox } from "./components/Button/sandbox";
 import { ButtonGroupSandBox } from "./components/ButtonGroup/sandbox";
 import { IconSandBox } from "./components/Icon/sandbox";
+import { ImageSandBox } from "./components/Image/Sandbox";
+
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
@@ -17,6 +19,7 @@ ReactDOM.render(
 					<Route path="/button" component={ButtonSandbox} />
 					<Route path="/button-group" component={ButtonGroupSandBox} />
 					<Route path="/icon" component={IconSandBox} />
+					<Route path="/image" component={ImageSandBox} />
 				</Switch>
 			</App>
 		</BrowserRouter>
