@@ -32,16 +32,14 @@ export const Button: React.FC<buttonProps | any> = ({
 		}
 	};
 	return (
-		<div>
-			<Tag
-				className={classes}
-				disabled={disabled}
-				onClick={onClickAction}
-				{...attrs}
-			>
-				{children}
-			</Tag>
-		</div>
+		<Tag
+			className={classes}
+			disabled={disabled}
+			onClick={onClickAction}
+			{...attrs}
+		>
+			{children}
+		</Tag>
 	);
 };
 Button.defaultProps = {

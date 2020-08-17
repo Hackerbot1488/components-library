@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import classNames from "class-names";
-
+import "./ButtonGroup.css";
 interface buttonGroupProps {
 	children?: ReactNode;
 	className?: string;
@@ -14,7 +14,7 @@ export const ButtonGroup: React.FC<buttonGroupProps> = ({
 	vertical,
 	...attrs
 }) => {
-	const classes = classNames("button-group", className, { vertical });
+	const classes = classNames("btn-group", className, { vertical });
 	return (
 		<div className={classes} {...attrs}>
 			{children}

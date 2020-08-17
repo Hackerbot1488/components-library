@@ -5,7 +5,7 @@ describe("ButtonGroup component", () => {
 	describe("with no props", () => {
 		it("should render ButtonGroup component with default props", () => {
 			const component = shallow(<ButtonGroup />);
-			expect(component.find(".button-group").length).toBe(1);
+			expect(component.find(".btn-group").length).toBe(1);
 			expect(component.find(".vertical").length).toBe(0);
 		});
 	});

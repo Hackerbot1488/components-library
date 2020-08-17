@@ -5,7 +5,7 @@ import { App } from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./layout/Home/Home";
-import ButtonSandbox from "./components/Button/sandbox";
+import { ButtonSandbox } from "./components/Button/sandbox";
 import { ButtonGroupSandBox } from "./components/ButtonGroup/sandbox";
 import { IconSandBox } from "./components/Icon/sandbox";
 ReactDOM.render(

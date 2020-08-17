@@ -2,8 +2,8 @@
 import React, { Fragment } from "react";
 import { Button } from "./Button";
 
-const Sandbox = () => (
-	<Fragment>
+export const ButtonSandbox: React.FC<{}> = () => (
+	<>
 		<h2>
 			<span>1. Text and onClick function:</span>
 		</h2>
@@ -43,8 +43,7 @@ const Sandbox = () => (
 		<Button href="test" disabled>
 			Link
 		</Button>
-	</Fragment>
+	</>
 );
 
-export default Sandbox;
 /* eslint-enable */
