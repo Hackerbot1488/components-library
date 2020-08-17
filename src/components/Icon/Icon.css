@@ -1,0 +1,7 @@
+.function {
+	cursor: pointer;
+}
+
+.function.disabled {
+	cursor: not-allowed;
+}
