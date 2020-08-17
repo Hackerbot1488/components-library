@@ -1,0 +1,35 @@
+.button-group {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.button-group > button {
+	margin: 0;
+}
+
+.button-group > button:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.button-group > button:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+.button-group.vertical {
+	min-width: 100px;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.button-group.vertical > button:first-child {
+	border-radius: 5px 5px 0 0;
+}
+
+.button-group.vertical > button:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+.button-group.vertical > button {
+	display: block;
+}
