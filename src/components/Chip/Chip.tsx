@@ -49,7 +49,7 @@ export const Chip: React.FC<chipProps> = ({
 			)}
 			{withIcon && (
 				<span className="chipIcon">
-					<Icon src={imageSrc} name={iconName} />
+					<Icon name={iconName} />
 				</span>
 			)}
 			<span className="chipText">{text}</span>

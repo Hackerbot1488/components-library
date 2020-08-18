@@ -35,7 +35,8 @@
       "!src/**/*.d.ts",
       "!src/index.tsx",
       "!src/serviceWorker.ts",
-      "!src/**/**/sandbox.tsx"
+      "!src/**/**/sandbox.tsx",
+      "!src/**/**/example.tsx"
     ],
     "coveragePathIgnorePatterns": [
       "./src/*/*.types.{ts,tsx}",
