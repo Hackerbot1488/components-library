@@ -54,6 +54,11 @@ export const Navigation: React.FC<{}> = () => (
 						List-Group
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/input">
+						Input
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>
