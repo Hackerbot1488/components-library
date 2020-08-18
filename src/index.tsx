@@ -13,6 +13,7 @@ import { ChipSandBox } from "./components/Chip/sandbox";
 import { BadgeSandBox } from "./components/Badge/sandbox";
 import { ListGroupSandBox } from "./components/ListGroup/sandbox";
 import { InputSandBox } from "./components/Input/sandbox";
+import { TabBarSandBox } from "./components/TabBar/sandbox";
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -28,6 +29,7 @@ ReactDOM.render(
 					<Route path="/badge" component={BadgeSandBox} />
 					<Route path="/list-group" component={ListGroupSandBox} />
 					<Route path="/input" component={InputSandBox} />
+					<Route path="/input" component={TabBarSandBox} />
 				</Switch>
 			</App>
 		</BrowserRouter>

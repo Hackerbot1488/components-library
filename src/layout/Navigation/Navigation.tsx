@@ -59,6 +59,11 @@ export const Navigation: React.FC<{}> = () => (
 						Input
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/tab-bar">
+						Tab-Bar
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>
