@@ -25,7 +25,6 @@ export const Button: React.FC<buttonProps | any> = ({
 		e: React.MouseEvent<HTMLButtonElement | HTMLLinkElement>
 	) => {
 		if (disabled) {
-			console.log(e);
 			e.preventDefault();
 		} else {
 			return onCLick(e);

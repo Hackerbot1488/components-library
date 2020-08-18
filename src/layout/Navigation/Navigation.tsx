@@ -49,6 +49,11 @@ export const Navigation: React.FC<{}> = () => (
 						Badge
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/list-group">
+						List-Group
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>

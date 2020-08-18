@@ -11,6 +11,7 @@ import { IconSandBox } from "./components/Icon/sandbox";
 import { ImageSandBox } from "./components/Image/sandbox";
 import { ChipSandBox } from "./components/Chip/sandbox";
 import { BadgeSandBox } from "./components/Badge/sandbox";
+import { ListGroupSandBox } from "./components/ListGroup/sandbox";
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.render(
 					<Route path="/image" component={ImageSandBox} />
 					<Route path="/chip" component={ChipSandBox} />
 					<Route path="/badge" component={BadgeSandBox} />
+					<Route path="/list-group" component={ListGroupSandBox} />
 				</Switch>
 			</App>
 		</BrowserRouter>
