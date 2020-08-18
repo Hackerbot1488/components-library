@@ -10,6 +10,7 @@ import { ButtonGroupSandBox } from "./components/ButtonGroup/sandbox";
 import { IconSandBox } from "./components/Icon/sandbox";
 import { ImageSandBox } from "./components/Image/sandbox";
 import { ChipSandBox } from "./components/Chip/sandbox";
+import { BadgeSandBox } from "./components/Badge/sandbox";
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.render(
 					<Route path="/icon" component={IconSandBox} />
 					<Route path="/image" component={ImageSandBox} />
 					<Route path="/chip" component={ChipSandBox} />
+					<Route path="/badge" component={BadgeSandBox} />
 				</Switch>
 			</App>
 		</BrowserRouter>
