@@ -84,6 +84,12 @@ export const TabBarSandBox: React.FC<{}> = () => (
 				</ButtonGroup>
 			</TabBarItem>
 		</TabBar>
+		<h2>
+			<span>3. Break the tests:</span>
+		</h2>
+		<TabBar>
+			<TabBarItem label="kek" />
+		</TabBar>
 	</Fragment>
 );
 

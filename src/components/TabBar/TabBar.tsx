@@ -3,14 +3,15 @@ import "./TabBar.css";
 import classNames from "class-names";
 import { TabBarItemProps } from "./TabBarItem/TabBarItem";
 import { TabBarNav } from "./TabBarNav/TabBarNav";
-interface TabBarProps {
+export interface TabBarProps {
 	className?: string;
 	vertical?: boolean;
 	children?: ReactNode;
 	[type: string]: any;
 }
-interface TabBarState {
+export interface TabBarState {
 	activeTab: React.ReactNode | null;
+	text: string;
 }
 export class TabBar extends Component<TabBarState, TabBarProps> {
 	static defaultProps: TabBarProps = {
@@ -27,7 +28,11 @@ export class TabBar extends Component<TabBarState, TabBarProps> {
 		this.setActiveTab(activeTab);
 	}
 	getChildrenLabels = (children: any): string[] => {
-		return children.map(({ props }: TabBarItemProps) => props.label);
+		if (children instanceof Array) {
+			return children.map(({ props }: TabBarItemProps) => props.label);
+		} else {
+			return [children.props.label];
+		}
 	};
 	setActiveTab = (activeTab: string | undefined): void => {
 		const { activeTab: currentTub } = this.state;
@@ -44,7 +49,7 @@ export class TabBar extends Component<TabBarState, TabBarProps> {
 			<TabBarNav
 				key={navLabel}
 				navLabel={navLabel}
-				className={classNames({ active: activeTab === navLabel })}
+				className={classNames("nav-item", { active: activeTab === navLabel })}
 				onChangeActiveTab={this.setActiveTab}
 			/>
 		));
