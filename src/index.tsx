@@ -15,6 +15,7 @@ import { ListGroupSandBox } from "./components/ListGroup/sandbox";
 import { InputSandBox } from "./components/Input/sandbox";
 import { TabBarSandBox } from "./components/TabBar/sandbox";
 import { TooltipSandBox } from "./components/Tooltip/sandbox";
+import { ModalSandBox } from "./components/Modal/sandbox";
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -32,6 +33,7 @@ ReactDOM.render(
 					<Route path="/input" component={InputSandBox} />
 					<Route path="/tab-bar" component={TabBarSandBox} />
 					<Route path="/tooltip" component={TooltipSandBox} />
+					<Route path="/modal" component={ModalSandBox} />
 				</Switch>
 			</App>
 		</BrowserRouter>
