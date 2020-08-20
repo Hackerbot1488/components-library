@@ -64,6 +64,11 @@ export const Navigation: React.FC<{}> = () => (
 						Tab-Bar
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/tooltip">
+						Tooltip
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>
