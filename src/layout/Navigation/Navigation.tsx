@@ -69,6 +69,11 @@ export const Navigation: React.FC<{}> = () => (
 						Tooltip
 					</NavLink>
 				</li>
+				<li className="list__item">
+					<NavLink className="list__link" to="/modal">
+						Modal
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	</div>
