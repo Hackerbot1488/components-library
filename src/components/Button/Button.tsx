@@ -8,6 +8,7 @@ interface buttonProps {
 	className?: string;
 	disabled?: boolean;
 	active?: boolean;
+	invert?: boolean;
 	attrs?: any;
 }
 
@@ -17,9 +18,15 @@ export const Button: React.FC<buttonProps | any> = ({
 	className,
 	disabled,
 	active,
+	invert,
 	...attrs
 }) => {
-	const classes: string = classNames("button", className, { active });
+	const classes: string = classNames(
+		"button",
+		className,
+		{ active },
+		{ invert }
+	);
 	const Tag = attrs.href ? "a" : "button";
 	const onClickAction = (
 		e: React.MouseEvent<HTMLButtonElement | HTMLLinkElement>
