@@ -1,5 +1,4 @@
 import React from "react";
-import ClassNames from "class-names";
 import "./Modal.css";
 import { Portal } from "../Portal/Portal";
 import { Icon } from "../Icon/Icon";
