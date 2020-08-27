@@ -6,7 +6,7 @@ export const Navigation: React.FC<{}> = () => (
 	<div className="navigation">
 		<div className="logoWrapper">
 			<img
-				src="https://www.vectorlogo.zone/logos/reactjs/reactjs-card.png"
+				src="https://cdn.worldvectorlogo.com/logos/react.svg"
 				height="60"
 				alt="logo"
 				className="logo"
